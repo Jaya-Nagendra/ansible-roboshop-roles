@@ -3,3 +3,6 @@
   become: yes
   roles:
   - "{{ component }}"
+
+
+  # ansible-playbook -e component=mongodb roboshop.yaml
