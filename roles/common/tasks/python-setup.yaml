@@ -15,12 +15,4 @@
   args:
     chdir: /app    
 
-- name: daemon reload
-  ansible.builtin.systemd_service:
-    daemon_reload: true
-
-- name: start and enable payment
-  ansible.builtin.service:
-    name: payment
-    state: restarted
-    enabled: yes          
+          
